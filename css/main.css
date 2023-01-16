@@ -87,6 +87,111 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+
+}
+
+header {}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+aside h3,
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+
+}
+
+#features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviews, h2, h3, p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+
+}
+
+address, p, h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+
+.social-icons, .copyright, p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -180,9 +285,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -193,6 +298,7 @@ textarea {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -260,4 +366,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
