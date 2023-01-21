@@ -25,44 +25,53 @@
 <body>
 
   <header>
-    <div>
-      <a href="#"><img src="unplugged-design-docs/unpluggedlogo.png" alt="unpluggedlogo"></a>
-    </div>
-    <nav>
-      <ul>
-        <li>
-          <a href="about/index.html" target="_blank">About</a>
-        </li>
-        <li>
-          <a href="faq/index.html" target="_blank">FAQ</a>
-        </li>
+    <div class="content-wrapper">
+      <figure class="unplugged-logo">
+        <a href="#"><img src="unplugged-design-docs/unpluggedlogo.png" alt="unpluggedlogo"></a>
+      </figure>
 
-      </ul>
-    </nav>
+      <div class="header-divider"></div>
+      <nav>
+        <ul>
+          <li>
+            <a href="about/index.html" target="_blank">About</a>
+          </li>
+          <li>
+            <a href="faq/index.html" target="_blank">FAQ</a>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
   </header>
 
 
   <main>
     <section id="hero">
-      <h1> Retreat from the desk, return refreshed.</h1>
-      <div class="hero-area">
-        <img src="unplugged-design-docs/unplugged-retreat.jpg" alt="woman standing on bridge">
+      <div class="content-wrapper">
+        <div class="hero-area">
+          <h1> Retreat from the desk, return refreshed.</h1>
+          <!-- <img src="unplugged-design-docs/unplugged-retreat.jpg" alt="woman standing on bridge"> -->
+        </div>
       </div>
     </section>
 
     <aside>
-      <h3>Want to join the next retreat?</h3>
-      <p>Find out when we are holding our next retreat and how your company or team can sign up!</p>
-      <h3>Find out more</h3>
-      <div class="form">
-        <input class="email" type="text" name="name" value="email address">
-        <input class="download" type="button" value="Download Itinerary">
+      <div class="content-wrapper">
+        <h3>Want to join the next retreat?</h3>
+        <p>Find out when we are holding our next retreat and how your company or team can sign up!</p>
+        <h3>Find out more</h3>
+
+        <div class="form">
+          <input class="email" type="text" name="name" value="name@email.com">
+          <input class="download" type="button" value="Download Itinerary">
+        </div>
       </div>
     </aside>
 
     <section id="features">
       <div class="content-wrapper">
-        <div class="feature-headline">
+        <div class="features-headline">
           <h2>Have the work week you always dreamed of - without the bad wifi.</h2>
         </div>
         <article>
@@ -105,15 +114,21 @@
     <section class="reviews">
       <div class="content-wrapper">
         <h2>Be a better team in 5 days, like this one.</h2>
+        <div class="reviews-img">
+          
+          <img class="team-image" src="unplugged-design-docs/unplugged-retreat-lacrue.jpg" alt="group of women posing">
+        </div>
 
-        <h3>LaCrue Bottling Co. <br>October 2018</h3>
+          <h3>LaCrue Bottling Co. <br>October 2018</h3>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.</p>
 
-      </div>
+        </div>
 
 
       </div>
@@ -124,22 +139,25 @@
 
   <footer>
     <div class="contact">
+      <h2>Contact</h2>
       <address>
         <div>
-          <h2>Contact</h2>
+
           <p>555-555-5555<br>hello@unplugged.com</p>
         </div>
-        <div>
-          <h2>Social
-          </h2>
-        </div>
       </address>
-        <div class="social-icons">
-          <p> <a href="https://www.facebook.com/yoursite" target="_blank"></a></p>
-          <p> <a href="https://www.twitter.com/yoursite" target="_blank"></a></p>
-          <p><a href="https://www.instagram.com/yoursite"></a></p>
-        </div>
-   
+      <div>
+
+        <h2>Social
+        </h2>
+      </div>
+
+      <div class="social-icons">
+        <p> <a href="https://www.facebook.com/yoursite" target="_blank"></a></p>
+        <p> <a href="https://www.twitter.com/yoursite" target="_blank"></a></p>
+        <p><a href="https://www.instagram.com/yoursite"></a></p>
+      </div>
+
 
       <div class="copyright">
         <p>Copyright 202X | Unplugged</p>
@@ -147,6 +165,8 @@
     </div>
 
   </footer>
+  </div>
+
   <!-- Add your site or application content here -->
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>

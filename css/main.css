@@ -87,106 +87,256 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-header,
-footer {
+header footer{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 
+}
+
+
+header {
+  display:flex;
+  background: #202322;
+  width: 100%;
+  align-items: center;
 
 }
 
-header {}
+header .unplugged-logo img{
+  display: flex;
+  width: 60%;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.unplugged-logo a {
+  display: flex;
+  justify-content: center;
+  padding:0;
+  margin:0;
+  
+}
 
 header nav {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-}
-
-
-#hero {
-  display: flex;
   justify-content: center;
-  align-items: center;
+  margin: 0;
+
 }
 
-#hero h1 {
+header nav ul {
   display: flex;
+  align-items: center;
+  list-style: none;
+  flex-flow: row-reverse;
+  width: 60%;
   justify-content: center;
-  align-items: center;
+  padding: 0;
+  
+
 
 }
 
-main {
+header nav ul li a{
+  color:#e2e3ed;
+  text-decoration: none;
+  display:flex;
+  padding: 0 20px;
+  margin: 20px 0 15px 0;
+
+}
+
+.hero-area {
+  background: url(../unplugged-design-docs/unplugged-retreat.jpg)no-repeat center;
   display: flex;
+  min-height: 500px;
+  color: #e2e3ed;
+  background-size: cover;
+  
+}
+
+h1 {
+  display: flex;
+  width: 90%;
+  margin: 50px 20px;
+}
+
+
+/**aside section**/
+
+aside{
+  background:#527158;
+  display:flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+aside .content-wrapper {
+display: flex;
+flex-flow: row wrap;
+margin: 50px 0;
+width: 90%;
+}
+
+aside .content-wrapper h3{
+  color:#e2e3ed;
+  margin: 0;
+  padding: 20px 0;
+  flex-flow: row wrap;
+  
+}
+
+aside .content-wrapper p {
+  color: #e2e3ed;
+  width: 90%;
+  display: flex;
+  justify-content: center;
 
 }
 
-aside {
+aside .form {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
 }
 
-aside h3,
-p {
+aside .email {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-flow: row wrap; 
+  padding: 1em;
+  width: 100%;
+  margin-bottom: 20px;
+  font-style: italic;
 }
 
-.form {
+aside .download {
   display: flex;
+  padding:20px;
+  width:100%;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  margin-top: 20px;
+  background:#2a423a;
+  color: #e2e3ed;
+  border-style: none;
+
+}
+
+/**features section**/
+
+
+#features{
+  background: url(../unplugged-design-docs/unplugged-retreat-features.jpg);
+  background-size: cover;
+}
+
+
+#features .content-wrapper{
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  
+  
+  
+} 
+ 
+.features-headline h2 {
+  color:#e2e3ed;
+  display:flex;
+  margin: 0 20px;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  
   
 
 }
 
-#features {
+.content-wrapper article {
+  color:#e2e3ed;
+  display:flex;
+  width:62%;
+  text-align: center;
+  margin-bottom: 50px;
+  
+  
+}
+
+
+/**reviews section**/
+
+
+.reviews{
+  background: #2a423a;
   display: flex;
   justify-content: center;
-  align-items: center;
 
 }
 
-.reviews {
+.reviews .content-wrapper{
+  width: 90%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.reviews, h2, h3, p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
-
+  
 
 }
 
-address, p, h2 {
+.reviews .content-wrapper h2 {
+  color: #e2e3ed;
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 40px;
+
+}
+
+.team-image{
+  width: 100%;
+}
+
+.reviews h3 {
+  color: #e2e3ed;
+  margin:20px 0;
+}
+
+.reviews p {
+  color:#e2e3ed;
+  padding-bottom: 50px;
+}
+
+
+footer{
+  display: flex;
+  background: #202322;
+  flex-flow: row wrap;
+  justify-content: center;
+
+}
+
+.contact h2 {
+  color:#e2e3ed;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+  margin-top: 70px;
+  margin-bottom: 20px;
 
 }
 
-.social-icons, .copyright, p {
-  display: flex;
+.contact address p {
+  color: #e2e3ed;
+  display:flex;
   justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+  text-align: center;
+  
 }
+
+
+.copyright {
+  color: #e2e3ed;
+  margin: 20px 0;
+}
+
+
+
 
 
 
@@ -280,16 +430,16 @@ address, p, h2 {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
 
-@media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+
+
+@media only screen and (min-width:1200px)
+/**desktop styles here**/
+
+  {}
+
+/* Style adjustments for high resolution devices */
+
 
 /* ==========================================================================
    Print styles.
