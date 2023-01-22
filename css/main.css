@@ -358,7 +358,7 @@ footer h2{
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
-  font-family: 'poppins', sans-serif;;
+  font-family: 'poppins', sans-serif;
 }
 
 address{
@@ -644,7 +644,7 @@ footer{
 footer .content-wrapper{
   width:90%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-flow: row;
   
 
