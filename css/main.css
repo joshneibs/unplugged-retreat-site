@@ -87,7 +87,12 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-header footer{
+*{
+  font-family: 'open-sans', sans-serif;
+}
+
+
+header footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,14 +102,14 @@ header footer{
 
 
 header {
-  display:flex;
+  display: flex;
   background: #202322;
   width: 100%;
   align-items: center;
 
 }
 
-header .unplugged-logo img{
+header .unplugged-logo img {
   display: flex;
   width: 60%;
   margin-top: 15px;
@@ -114,9 +119,9 @@ header .unplugged-logo img{
 .unplugged-logo a {
   display: flex;
   justify-content: center;
-  padding:0;
-  margin:0;
-  
+  padding: 0;
+  margin: 0;
+
 }
 
 header nav {
@@ -134,59 +139,70 @@ header nav ul {
   width: 60%;
   justify-content: center;
   padding: 0;
-  
+
 
 
 }
 
-header nav ul li a{
-  color:#e2e3ed;
+header nav ul li a {
+  color: #e2e3ed;
   text-decoration: none;
-  display:flex;
+  display: flex;
   padding: 0 20px;
   margin: 20px 0 15px 0;
+  font-size: 18px;
+  font-weight: bold;
+
 
 }
 
-.hero-area {
+#hero {
   background: url(../unplugged-design-docs/unplugged-retreat.jpg)no-repeat center;
   display: flex;
   min-height: 500px;
   color: #e2e3ed;
   background-size: cover;
-  
+
 }
 
 h1 {
   display: flex;
   width: 90%;
   margin: 50px 20px;
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: 500;
+  font-family: 'poppins', sans-serif;
 }
 
 
 /**aside section**/
 
-aside{
-  background:#527158;
-  display:flex;
+aside {
+  background: #527158;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
 aside .content-wrapper {
-display: flex;
-flex-flow: row wrap;
-margin: 50px 0;
-width: 90%;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 50px 0;
+  width: 90%;
 }
 
-aside .content-wrapper h3{
-  color:#e2e3ed;
+aside .content-wrapper h3 {
+  color: #e2e3ed;
   margin: 0;
   padding: 20px 0;
   flex-flow: row wrap;
-  
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'poppins', sans-serif;
+
+
 }
 
 aside .content-wrapper p {
@@ -194,6 +210,9 @@ aside .content-wrapper p {
   width: 90%;
   display: flex;
   justify-content: center;
+  font-size: 14px;
+
+
 
 }
 
@@ -204,80 +223,93 @@ aside .form {
 
 aside .email {
   display: flex;
-  flex-flow: row wrap; 
+  flex-flow: row wrap;
   padding: 1em;
   width: 100%;
   margin-bottom: 20px;
   font-style: italic;
+  background: #e2e3ed;
+  border-style: none;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 aside .download {
   display: flex;
-  padding:20px;
-  width:100%;
+  padding: 20px;
+  width: 100%;
   justify-content: center;
   margin-top: 20px;
-  background:#2a423a;
+  background: #2a423a;
   color: #e2e3ed;
   border-style: none;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+
 
 }
 
 /**features section**/
 
 
-#features{
+#features {
   background: url(../unplugged-design-docs/unplugged-retreat-features.jpg);
   background-size: cover;
 }
 
 
-#features .content-wrapper{
-  display:flex;
+#features .content-wrapper {
+  display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  
-  
-  
-} 
- 
+
+
+
+}
+
 .features-headline h2 {
-  color:#e2e3ed;
-  display:flex;
+  color: #e2e3ed;
+  display: flex;
   margin: 0 20px;
   padding-top: 50px;
   padding-bottom: 60px;
-  
-  
+  font-size: 30px;
+  font-weight: 500;
+  font-family: 'poppins', sans-serif;
+
 
 }
 
 .content-wrapper article {
-  color:#e2e3ed;
-  display:flex;
-  width:62%;
+  color: #e2e3ed;
+  display: flex;
+  width: 62%;
   text-align: center;
   margin-bottom: 50px;
-  
-  
+  font-size: 14px;
+  line-height: 18px;
+
 }
 
 
 /**reviews section**/
 
 
-.reviews{
+.reviews {
   background: #2a423a;
   display: flex;
   justify-content: center;
 
 }
 
-.reviews .content-wrapper{
+.reviews .content-wrapper {
   width: 90%;
   display: flex;
   flex-flow: row wrap;
-  
+
 
 }
 
@@ -286,53 +318,70 @@ aside .download {
   display: flex;
   padding-top: 50px;
   padding-bottom: 40px;
+  font-family: 'poppins', sans-serif;
 
 }
 
-.team-image{
+.team-image {
   width: 100%;
 }
 
 .reviews h3 {
   color: #e2e3ed;
-  margin:20px 0;
+  margin: 20px 0;
+  font-family: 'poppins', sans-serif;
 }
 
 .reviews p {
-  color:#e2e3ed;
+  color: #e2e3ed;
   padding-bottom: 50px;
 }
 
 
-footer{
+footer {
   display: flex;
   background: #202322;
   flex-flow: row wrap;
   justify-content: center;
-
 }
 
-.contact h2 {
-  color:#e2e3ed;
-  display: flex;
-  justify-content: center;
-  margin-top: 70px;
-  margin-bottom: 20px;
-
-}
-
-.contact address p {
-  color: #e2e3ed;
+footer .content-wrapper{
   display:flex;
   justify-content: center;
-  text-align: center;
-  
+  flex-flow: column;
+  width:100%
 }
 
+footer h2{
+  color: #e2e3ed;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  font-family: 'poppins', sans-serif;;
+}
+
+address{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-style: normal;
+}
+
+footer p {
+  color:#e2e3ed;
+  text-align: center;
+  display:flex;
+  justify-content: center;
+}
 
 .copyright {
   color: #e2e3ed;
   margin: 20px 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 
@@ -430,7 +479,209 @@ footer{
    Modify as content requires.
    ========================================================================== */
 
+@media only screen and (min-width: 768px) {
 
+
+  header {
+    display: flex;
+    justify-content: center;
+
+  }
+
+
+  header .content-wrapper {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 33px 0;
+
+  }
+
+  header .unplugged-logo {
+    width: 30%;
+  }
+
+  header nav {
+    width: 20%;
+    display: flex;
+    align-items: center;
+
+  }
+
+  #hero .content-wrapper {
+    width: 90%;
+
+  }
+
+  #hero h1 {
+    width: 82%;
+    margin: 0;
+    display: flex;
+    padding: 100px 0;
+    justify-content: center;
+
+  }
+
+  aside .content-wrapper {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  aside .aside-text {
+    display: flex;
+    flex-flow: column;
+    width: 40%;
+  }
+
+  aside .form {
+    display: flex;
+    flex-flow: column;
+    width: 40%;
+    
+  }
+
+aside .email {
+  width:auto;
+}
+
+/** features **/
+
+
+
+#features{
+  display: flex;
+  justify-content: center;
+
+}
+
+
+#features .content-wrapper{
+  width:90%;
+  display:flex;
+  justify-content: center;
+  padding-bottom: 100px;
+  
+
+}
+
+.features-headline {
+  margin-top:100px;
+  width: 100%;
+  display:flex;
+  margin-bottom: 20px;
+
+}
+
+#features article {
+  display:flex;
+  flex-flow: row;
+  width:30%;
+  padding:30px 10%;
+  }
+
+
+  /**reviews**/
+
+  .reviews{
+    display: flex;
+    justify-content: center;
+
+  }
+  .reviews .content-wrapper {
+    width: 90%;
+    display:flex;
+
+  }
+
+  .reviews h2{
+    width:75%;
+  }
+
+.lacrue{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+  .team-image {
+    width: 50%;
+    display:flex;
+    padding-bottom: 100px;
+    
+
+  }
+.reviews h3{
+  display:flex;
+  align-items: center;
+  margin:0;
+}
+
+.reviews p{
+  margin: 0;;
+}
+
+.review-text{
+  width: 47%;
+  display:flex;
+  flex-flow: row wrap;
+  padding:0,0,100px, 5px;
+  
+
+}
+
+
+
+
+footer{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+footer .content-wrapper{
+  width:90%;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row;
+  
+
+}
+
+footer h2{
+  display:flex;
+  margin-bottom: 40px;
+  margin-top: 100px;
+  width:20%;
+  justify-content: center;
+}
+
+footer .contact-info{
+  display: flex;
+}
+
+footer .contact-main{
+  display: flex;
+  width: 30%;
+  flex-flow: row wrap;
+  justify-content: center;
+
+}
+
+.social-icons {
+display: flex;
+width: 30%;
+justify-content: center;
+
+}
+
+.copyright{
+margin-top: 100px;
+}
+
+}
 
 
 @media only screen and (min-width:1200px)
